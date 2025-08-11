@@ -1,9 +1,9 @@
-# FACE DETECTION AND EXPRESSION RECOGNITION OF ELEMENTARY SCHOOL STUDENTS USING YOLOV8 AND RESNET50 MODELS TO MEASURE INTEREST IN SUBJECTS
+# Face Detection And Expression Recognition Of Elementary School Students Using Yolov8 And Resnet50 Models To Measure Interest In Subjects
 
 **Bahasa:** [🇮🇩 Bahasa Indonesia](README.md) | [🇺🇸 English](README_en.md)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mnatasyar/mnatasyar/main/DemoAplikasi.gif" alt="Demo" width="300"/>
+  <img src="https://raw.githubusercontent.com/mnatasyar/mnatasyar/main/DemoAplikasi.gif" alt="Demo" width="700"/>
 </p>
 
 This project aims to develop an AI-based system capable of detecting faces and recognizing emotional expressions of elementary school students using **YOLOv8** for face detection and **ResNet50** for expression recognition from uploaded images or videos. The system is designed to assist teachers in evaluating students’ level of interest in the subject being taught.

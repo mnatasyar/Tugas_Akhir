@@ -3,7 +3,7 @@
 **Bahasa:** [🇮🇩 Bahasa Indonesia](README.md) | [🇺🇸 English](README_en.md)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mnatasyar/mnatasyar/main/DemoAplikasi.gif" alt="Demo" width="300"/>
+  <img src="https://raw.githubusercontent.com/mnatasyar/mnatasyar/main/DemoAplikasi.gif" alt="Demo" width="700"/>
 </p>
 
 Proyek ini bertujuan untuk mengembangkan sistem berbasis kecerdasan buatan yang mampu mendeteksi wajah dan mengenali ekspresi emosional siswa Sekolah Dasar (SD) menggunakan model **YOLOv8** untuk deteksi wajah dan **ResNet50** untuk pengenalan ekspresi melalui gambar atau video yang diunggah. Sistem ini digunakan untuk membantu guru dalam mengevaluasi tingkat ketertarikan siswa terhadap mata pelajaran yang sedang diajarkan.
