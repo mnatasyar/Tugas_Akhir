@@ -1,7 +1,9 @@
 # Deteksi Wajah Dan Pengenalan Ekspresi Siswa SD Menggunakan Model Yolov8 Dan Resnet50 Untuk Mengukur Ketertarikan Terhadap Mata Pelajaran
 
+**Bahasa:** [🇮🇩 Bahasa Indonesia](README.md) | [🇺🇸 English](README_en.md)
+
 <p align="center">
-  <img src="">
+  <img src="https://raw.githubusercontent.com/mnatasyar/mnatasyar/main/DemoAplikasi.gif" alt="Demo" width="300"/>
 </p>
 
 Proyek ini bertujuan untuk mengembangkan sistem berbasis kecerdasan buatan yang mampu mendeteksi wajah dan mengenali ekspresi emosional siswa Sekolah Dasar (SD) menggunakan model **YOLOv8** untuk deteksi wajah dan **ResNet50** untuk pengenalan ekspresi melalui gambar atau video yang diunggah. Sistem ini digunakan untuk membantu guru dalam mengevaluasi tingkat ketertarikan siswa terhadap mata pelajaran yang sedang diajarkan.
@@ -13,13 +15,12 @@ Proyek ini bertujuan untuk mengembangkan sistem berbasis kecerdasan buatan yang 
 - [Fitur Utama](#fitur-utama)
 - [Struktur Proyek](#struktur-proyek)
 - [Teknologi yang Digunakan](#teknologi-yang-digunakan)
-- [Cara Menjalankan Proyek](#cara-menjalankan-proyek)
-  - [1. Backend](#1-backend)
-  - [2. Frontend](#2-frontend)
-- [Dataset & Pelatihan Model](#dataset--pelatihan-model)
-- [Arsitektur Sistem](#arsitektur-sistem)
-- [Kontribusi](#kontribusi)
-- [Lisensi](#lisensi)
+- [Cara Menjalankan Proyek Secara Lokal](#cara-menjalankan-proyek-secara-lokal)
+  - [1. Frontend](#1-frontend)
+  - [2. Backend](#2-backend)
+- [Hasil Akhir Proyek](#hasil-akhir-proyek)
+
+---
 
 ## Fitur Utama
 
@@ -35,7 +36,7 @@ Sistem ini terdiri dari frontend (antarmuka pengguna) dan backend (pemrosesan da
 ## Struktur Proyek
 
 ```
-main/
+Tugas_Akhir/
 ├── frontend/
 │ ├── public/
 │ ├── src/
@@ -46,7 +47,8 @@ main/
 │ ├── output-video/
 │ ├── tmp/
 │ └── requirements.txt
-└── README.md
+├── README.md
+└── README_en.md
 ```
 
 ## Teknologi yang Digunakan
@@ -78,8 +80,18 @@ Ikuti langkah-langkah ini secara berurutan untuk menyiapkan dan menjalankan kese
 
 ### Prasyarat
 
+- Node.js
 - Python 3.10+
 - Git
+
+### Clone Repository
+
+Jalankan perintah berikut untuk menyalin repository ini ke komputer lokal:
+
+```
+git clone https://github.com/mnatasyar/Tugas_Akhir.git
+cd Tugas_Akhir
+```
 
 ### 1. Frontend
 
@@ -115,7 +127,7 @@ Pertama, membuka tab/terminal baru yang berada di direktori root proyek **Tugas_
 # 1. Masuk ke direktori pengembangan backend
 cd backend
 
-# [Optional] 2. Buat virtual environment (boleh venv/conda)
+# [Opsional] 2. Buat virtual environment (boleh venv/conda)
 # contoh disini kita menggunakan venv
 python -m venv venv
 venv\Scripts\activate
@@ -173,3 +185,14 @@ http://localhost:8000
 
 > [!NOTE]
 > dapat sesuaikan server dan port yang digunakan pada frontend di bagian `src/lib/constants.js` sesuai yang dijalankan pada sisi backend untuk dapat terhubung dengan frontend
+
+## Hasil Akhir Proyek
+
+Proyek ini menghasilkan sebuah sistem deteksi wajah dan pengenalan ekspresi siswa SD yang mampu menganalisis tingkat ketertarikan siswa terhadap mata pelajaran berdasarkan input berupa gambar atau video.
+
+Secara keseluruhan, sistem dapat:
+
+1. Mendeteksi wajah siswa dari media yang diunggah menggunakan model YOLOv8.
+2. Mengklasifikasikan ekspresi wajah menjadi tiga kategori tingkat ketertarikan (Tertarik, Netral, dan Tidak Tertarik) menggunakan model ResNet50 yang telah di-fine-tune.
+3. Menyajikan hasil analisis dalam bentuk visualisasi dan informasi deskriptif melalui antarmuka web yang sederhana, intuitif, dan ramah bagi pengguna non-teknis seperti guru atau tenaga pengajar.
+4. Memproses input secara offline/lokal untuk backend, dengan frontend yang dapat diakses secara online maupun lokal.
